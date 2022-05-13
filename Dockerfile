@@ -1,5 +1,7 @@
 FROM ubuntu:focal
 
+LABEL org.opencontainers.image.source https://github.com/mcfeasome/swiss-army-devops
+
 # Hashicorp Products
 ARG VAULT_VERSION=1.10.2
 ARG TERRAFORM_VERSION=1.1.9
