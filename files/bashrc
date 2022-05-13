@@ -1,0 +1,8 @@
+# load ruby --user-install path
+if which ruby >/dev/null && which gem >/dev/null; then
+    export GEM_HOME=$(ruby -r rubygems -e 'puts Gem.user_dir')
+    export GEM_PATH=$GEM_HOME
+    PATH="$GEM_HOME/bin:$PATH"
+fi
+
+export PATH="/usr/local/bin:$PATH"
